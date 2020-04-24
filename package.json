@@ -18,9 +18,10 @@
     "url": "https://github.com/AdaptableTools/json-data-server/issues"
   },
   "homepage": "https://github.com/AdaptableTools/json-data-server#readme",
+  "devDependencies": {
+    "netlify-cli": "^2.47.0"
+  },
   "dependencies": {
-    "netlify": "^4.0.5",
-    "netlify-lambda": "^1.6.3",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
