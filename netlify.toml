@@ -15,14 +15,3 @@
 [dev]
   # functions build directory
   functions = "functions"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/json-server/:splat"
-  status = 200
-
-
-[[redirects]]
-  from = '/orders*'
-  to = "/.netlify/functions/json-server/orders/:splat"
-  status = 200
