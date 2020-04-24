@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "netlify dev",
+    "dev": "parcel watch json-server/json-server.js --target node --out-dir functions -o json-server  --no-source-maps & netlify dev",
     "netlify-build": "netlify functions:build --functions build-functions --src functions",
-    "build": "rm -fr functions/json-server && ncc build json-server/json-server.js -o functions && mv functions/index.js functions/json-server.js && rm -fr functions/public && rm -fr functions/script.js && rm -fr functions/style.css && rm -fr functions/error.html"
+    "build": "parcel build json-server/json-server.js --target node --out-dir functions -o json-server  --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/AdaptableTools/json-data-server#readme",
   "devDependencies": {
     "netlify-cli": "^2.47.0",
-    "@zeit/ncc": "^0.20.5"
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
