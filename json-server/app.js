@@ -33,6 +33,12 @@ module.exports = function expressApp(functionName) {
   // Setup routes
   app.use(routerBasePath, router);
 
+  const middlewares = jsonServer.defaults({
+    static: ".",
+  });
+
+  router.use(middlewares);
+
   // Apply express middlewares
   router.use(cors());
   router.use(bodyParser.json());
