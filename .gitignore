@@ -108,4 +108,4 @@ dist
 *.zip
 build-functions
 .DS_Store
-functions
+functions/json-server
