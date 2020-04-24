@@ -106,3 +106,5 @@ dist
 # Local Netlify folder
 .netlify
 *.zip
+build-functions
+.DS_Store
