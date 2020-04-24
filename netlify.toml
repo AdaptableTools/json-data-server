@@ -10,7 +10,7 @@
   command = "npm run build"
   # This is the directory is publishing to netlify's CDN
   # functions build directory
-  functions = "functions"
+  functions = "build-functions"
 
 [dev]
   # functions build directory
