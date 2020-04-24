@@ -23,6 +23,6 @@
 
 
 [[redirects]]
-  from = '/orders'
-  to = "/.netlify/functions/json-server/orders"
+  from = '/orders*'
+  to = "/.netlify/functions/json-server/orders/:splat"
   status = 200
