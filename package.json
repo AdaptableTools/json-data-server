@@ -1,0 +1,31 @@
+{
+  "name": "json-data-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "netlify functions:build --functions build --src functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaptableTools/json-data-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdaptableTools/json-data-server/issues"
+  },
+  "homepage": "https://github.com/AdaptableTools/json-data-server#readme",
+  "devDependencies": {
+    "netlify": "^4.0.5",
+    "netlify-lambda": "^1.6.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "serverless-http": "^2.3.2"
+  }
+}
