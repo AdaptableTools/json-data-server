@@ -17,6 +17,6 @@
   functions = "functions"
 
 [[redirects]]
-  from = '/api/*'
-  to = '/.netlify/functions/json-server/:splat'
+  from = "/api/*"
+  to = "/.netlify/functions/json-server/:splat"
   status = 200
