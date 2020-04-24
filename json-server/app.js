@@ -40,6 +40,7 @@ module.exports = function expressApp(functionName) {
   router.use(middlewares);
 
   // Apply express middlewares
+  app.use(cors());
   router.use(cors());
   router.use(bodyParser.json());
   router.use(bodyParser.urlencoded({ extended: true }));
