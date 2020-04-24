@@ -31,6 +31,7 @@ module.exports = function expressApp(functionName) {
   // Attach logger
 
   // Setup routes
+  app.use(routerBasePath, cors());
   app.use(routerBasePath, router);
 
   const middlewares = jsonServer.defaults({
