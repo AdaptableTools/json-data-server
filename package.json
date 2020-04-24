@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "netlify dev",
     "netlify-build": "netlify functions:build --functions build --src functions",
-    "build": ""
+    "build": "echo ok"
   },
   "repository": {
     "type": "git",
