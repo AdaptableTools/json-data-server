@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "netlify dev",
-    "build": "netlify functions:build --functions build --src functions"
+    "netlify-build": "netlify functions:build --functions build --src functions",
+    "build": ""
   },
   "repository": {
     "type": "git",
