@@ -12,6 +12,10 @@ module.exports = function expressApp(functionName) {
 
   const router = jsonServer.router({
     orders: require("./data/orders.json"),
+    test: [
+      { id: 1, test: 1 },
+      { id: 2, test: 2 },
+    ],
   });
 
   // gzip responses
