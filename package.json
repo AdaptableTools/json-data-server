@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "netlify dev",
     "netlify-build": "netlify functions:build --functions build-functions --src functions",
-    "build": "rm -fr functions/json-server && ncc build json-server/json-server.js -o functions && mv functions/index.js functions/json-server.js"
+    "build": "rm -fr functions/json-server && ncc build json-server/json-server.js -o functions && mv functions/index.js functions/json-server.js && rm -fr functions/public && rm -fr functions/script.js && rm -fr functions/style.css && rm -fr functions/error.html"
   },
   "repository": {
     "type": "git",
