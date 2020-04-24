@@ -11,7 +11,7 @@ module.exports = function expressApp(functionName) {
   // const router = express.Router();
 
   const router = jsonServer.router({
-    orders: require("./data/NorthwindOrdersBig.json"),
+    orders: require("./data/orders.json"),
   });
 
   // gzip responses
