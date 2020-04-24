@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "netlify dev",
     "netlify-build": "netlify functions:build --functions build-functions --src functions",
-    "build": "echo okaybuilding"
+    "build": "rm -fr functions/json-server && ncc build json-server/json-server.js -o functions/json-server && mv functions/json-server/index.js functions/json-server/json-server.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/AdaptableTools/json-data-server#readme",
   "devDependencies": {
-    "netlify-cli": "^2.47.0"
+    "netlify-cli": "^2.47.0",
+    "@zeit/ncc": "^0.20.5"
   },
   "dependencies": {}
 }
