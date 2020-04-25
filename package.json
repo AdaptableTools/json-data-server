@@ -1,7 +1,7 @@
 {
   "name": "json-data-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "JSON data server",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon dev",
