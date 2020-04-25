@@ -15,7 +15,8 @@ module.exports = function expressApp(functionName) {
     test: [
       { id: 1, test: 1 },
       { id: 2, test: 2 },
-      { id: 3, test: 4 },
+      { id: 3, test: 3 },
+      { id: 4, test: 4 },
     ],
   });
 
