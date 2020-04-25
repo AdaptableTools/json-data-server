@@ -2,7 +2,7 @@
   "name": "json-data-server",
   "version": "1.0.0",
   "description": "JSON data server",
-  "main": "app.js",
+  "main": "dev.js",
   "scripts": {
     "dev": "nodemon dev",
     "netlify-dev": "netlify dev",
