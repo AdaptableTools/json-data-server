@@ -22,12 +22,12 @@ module.exports = function expressApp() {
   // gzip responses
   router.use(compression());
 
+  router.use(cors());
   // Setup routes
 
   app.use("/", router);
 
   // Apply express middlewares
-  router.use(cors());
 
   router.use(bodyParser.json());
   router.use(bodyParser.urlencoded({ extended: true }));
