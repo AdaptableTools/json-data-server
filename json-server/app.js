@@ -22,9 +22,9 @@ module.exports = function expressApp() {
   // gzip responses
   router.use(compression());
 
-  router.use(cors());
   // Setup routes
 
+  app.use("/", cors());
   app.use("/", router);
 
   // Apply express middlewares
