@@ -1,6 +1,6 @@
 const expressApp = require("./json-server/app");
 
-const app = expressApp("json-server");
+const app = expressApp();
 
 const port = 3002;
 app.listen(port, () => {

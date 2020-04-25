@@ -2,19 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "dev.js",
+      "src": "index.js",
       "use": "@now/node-server"
     }
   ],
   "routes": [
     {
       "src": "/orders",
-      "dest": "/dev.js",
+      "dest": "/index.js",
       "methods": ["GET"]
     },
     {
       "src": "/test",
-      "dest": "/dev.js",
+      "dest": "/index.js",
       "methods": ["GET"]
     }
   ]

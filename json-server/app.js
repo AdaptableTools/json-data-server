@@ -5,45 +5,30 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const compression = require("compression");
 
-/* My express App */
-module.exports = function expressApp(functionName) {
+module.exports = function expressApp() {
   const app = express();
-  // const router = express.Router();
 
   const router = jsonServer.router({
-    orders: require("./data/orders.json"),
+    orders: require("../data/orders.json"),
     test: [
       { id: 1, test: 1 },
       { id: 2, test: 2 },
       { id: 3, test: 3 },
       { id: 4, test: 4 },
+      { id: 5, test: 5 },
     ],
   });
 
   // gzip responses
   router.use(compression());
 
-  // Set router base path for local dev
-  // const routerBasePath =
-  //   process.env.NODE_ENV === "dev"
-  //     ? `/${functionName}`
-  //     : `/.netlify/functions/${functionName}/`;
-
-  // Attach logger
-
   // Setup routes
-  app.use("/", cors());
+
   app.use("/", router);
-
-  const middlewares = jsonServer.defaults({
-    static: ".",
-  });
-
-  router.use(middlewares);
 
   // Apply express middlewares
   app.use(cors());
-  router.use(cors());
+
   router.use(bodyParser.json());
   router.use(bodyParser.urlencoded({ extended: true }));
 

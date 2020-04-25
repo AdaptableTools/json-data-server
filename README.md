@@ -8,4 +8,8 @@ $ npm run dev
 
 ## Deployment
 
-Just push it and it will get deployed to netlify https://json-data-server.netlify.app/.netlify/functions/json-server/orders?_limit=10
+Just push it and it will get deployed to https://json-data-server.now.sh/orders?_limit=10
+
+## Adding routes / collections
+
+Add them in `json-server/app.js` and in `now.json`, so they will be correctly served when deployed
